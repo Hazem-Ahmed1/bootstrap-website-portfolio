@@ -666,3 +666,33 @@ body {
   color: #ff4d4d;
   margin-left: 4px;
 }
+
+
+
+@media (max-width:1200px) {
+    .navbar-nav div{
+      padding: 0 10px;
+    }
+
+
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* optional variations */
+.fade-left {
+  transform: translateX(-30px);
+}
+
+.fade-right {
+  transform: translateX(30px);
+}
